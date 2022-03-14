@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc">
+                    <items>
+                        <imageView width="129" height="126" alignment="center" verticalAlignment="center" image="logo" id="UlM-G8-wbs"/>
+                        <label alignment="center" verticalAlignment="center" text="CookBook" id="UPF-xN-fuk">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle2"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="mY6-0C-xC4" kind="relationship" relationship="nextPage" id="pa3-fK-3pD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-38"/>
+        </scene>
+        <!--Table RecipesIC-->
+        <scene sceneID="wCm-ea-mCu">
+            <objects>
+                <controller id="mY6-0C-xC4" customClass="TableRecipesIC" customModule="CookBook_Krasyuk_Komarov_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="LKu-3c-Vkn">
+                            <items>
+                                <tableRow identifier="tableRow" id="2KK-xC-YMF" customClass="RowTable" customModule="CookBook_Krasyuk_Komarov_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="92a-dy-nr8">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="swift" catalog="system" id="GXJ-Dk-KC9">
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </imageView>
+                                            <label alignment="left" verticalAlignment="center" text="RecName" id="hm2-mn-rzv"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowPicture" destination="GXJ-Dk-KC9" id="Es7-cZ-oW3"/>
+                                        <outlet property="rowRecipeName" destination="hm2-mn-rzv" id="lN0-ND-dyv"/>
+                                        <segue destination="dwq-tQ-gjV" kind="push" id="cod-LP-jGx"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="LKu-3c-Vkn" id="Ubd-Vp-pGH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="227.65217391304347" y="-44.017857142857146"/>
+        </scene>
+        <!--Detail RecipeIC-->
+        <scene sceneID="KbE-3p-Atm">
+            <objects>
+                <controller id="dwq-tQ-gjV" customClass="DetailRecipeIC" customModule="CookBook_Krasyuk_Komarov_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Zxr-9W-VUu">
+                            <items>
+                                <imageView width="24" height="24" alignment="center" verticalAlignment="center" id="KHi-l2-hdl"/>
+                                <label alignment="center" verticalAlignment="center" text="name" id="2Dl-ts-f5G"/>
+                            </items>
+                        </group>
+                        <imageView alignment="center" id="niY-9V-Qjh"/>
+                        <group width="1" alignment="left" layout="vertical" id="FZs-RN-4wJ">
+                            <items>
+                                <label alignment="left" text="Автор:" id="Yj3-Sl-hip"/>
+                                <label alignment="left" text="authorName" id="ebh-Ld-rTf"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="dC1-37-utn">
+                            <items>
+                                <label alignment="left" text="Описание:" id="mcy-io-nq0"/>
+                                <button alignment="left" id="i3y-IZ-Z6s">
+                                    <group key="contentGroup" width="1" alignment="left" id="YLF-M2-0ZJ">
+                                        <items>
+                                            <label alignment="left" text="recipeText" id="RkZ-cS-y08"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <segue destination="xw4-1A-2Px" kind="modal" id="SSS-E8-lPO"/>
+                                    </connections>
+                                </button>
+                                <slider width="1" alignment="left" maximum="5" steps="5" minimumImage="star" catalog="system" maximumImage="star.fill" id="Cv9-dK-EL8">
+                                    <color key="color" red="0.97254901960784312" green="0.70196078431372544" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="changeRating:" destination="dwq-tQ-gjV" id="9oo-ec-3zL"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorRecipe" destination="ebh-Ld-rTf" id="VOn-1m-VBl"/>
+                        <outlet property="iconRecipe" destination="KHi-l2-hdl" id="erP-4l-dLj"/>
+                        <outlet property="imageRecipe" destination="niY-9V-Qjh" id="YY0-37-n0j"/>
+                        <outlet property="nameRecipe" destination="2Dl-ts-f5G" id="CgN-CE-akq"/>
+                        <outlet property="ratingRecipe" destination="Cv9-dK-EL8" id="6aO-zc-GVl"/>
+                        <outlet property="textRecipe" destination="RkZ-cS-y08" id="xYw-Uk-EVr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="481" y="-44"/>
+        </scene>
+        <!--Recipe DescriptionIC-->
+        <scene sceneID="hB7-us-6gO">
+            <objects>
+                <controller id="xw4-1A-2Px" customClass="RecipeDescriptionIC" customModule="CookBook_Krasyuk_Komarov_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="left" text="recipeText" textAlignment="justified" numberOfLines="0" id="K3T-cC-f0T"/>
+                    </items>
+                    <connections>
+                        <outlet property="fullRecipeLabel" destination="K3T-cC-f0T" id="oZq-cE-ihm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="724" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="48" height="48"/>
+        <image name="star" catalog="system" width="128" height="115"/>
+        <image name="star.fill" catalog="system" width="128" height="115"/>
+        <image name="swift" catalog="system" width="128" height="112"/>
+    </resources>
+</document>

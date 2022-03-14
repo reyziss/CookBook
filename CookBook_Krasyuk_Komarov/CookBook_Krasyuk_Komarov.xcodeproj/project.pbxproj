@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FDA400627BA7C0B00A2570A /* DetailRecipeIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA400527BA7C0B00A2570A /* DetailRecipeIC.swift */; };
+		3FDA400827BA832000A2570A /* RecipeDescriptionIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDA400727BA832000A2570A /* RecipeDescriptionIC.swift */; };
+		3FDAEF8127B39F2A0044165B /* Recipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAEF8027B39F2A0044165B /* Recipes.swift */; };
+		3FDAEF8227B3A28B0044165B /* RowTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDAEF7F27B39D100044165B /* RowTable.swift */; };
+		3FEB41D627A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3FEB41D527A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FEB41DC27A80EE600077CD3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB41DA27A80EE600077CD3 /* Interface.storyboard */; };
+		3FEB41DE27A80EE700077CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB41DD27A80EE700077CD3 /* Assets.xcassets */; };
+		3FEB41E427A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3FEB41E327A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FEB41E927A80EE700077CD3 /* TableRecipesIC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB41E827A80EE700077CD3 /* TableRecipesIC.swift */; };
+		3FEB41EB27A80EE700077CD3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB41EA27A80EE700077CD3 /* ExtensionDelegate.swift */; };
+		3FEB41ED27A80EE700077CD3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB41EC27A80EE700077CD3 /* ComplicationController.swift */; };
+		3FEB41EF27A80EE800077CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB41EE27A80EE800077CD3 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FEB41D727A80EE600077CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEB41CB27A80EE600077CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEB41D427A80EE600077CD3;
+			remoteInfo = "CookBook_Krasyuk_Komarov WatchKit App";
+		};
+		3FEB41E527A80EE700077CD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FEB41CB27A80EE600077CD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FEB41E227A80EE700077CD3;
+			remoteInfo = "CookBook_Krasyuk_Komarov WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3FEB41F627A80EE800077CD3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3FEB41E427A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEB41FA27A80EE800077CD3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3FEB41D627A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3FDA400527BA7C0B00A2570A /* DetailRecipeIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRecipeIC.swift; sourceTree = "<group>"; };
+		3FDA400727BA832000A2570A /* RecipeDescriptionIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDescriptionIC.swift; sourceTree = "<group>"; };
+		3FDAEF7F27B39D100044165B /* RowTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTable.swift; sourceTree = "<group>"; };
+		3FDAEF8027B39F2A0044165B /* Recipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recipes.swift; path = "CookBook_Krasyuk_Komarov WatchKit App/Recipes.swift"; sourceTree = SOURCE_ROOT; };
+		3FEB41D127A80EE600077CD3 /* CookBook_Krasyuk_Komarov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookBook_Krasyuk_Komarov.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEB41D527A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CookBook_Krasyuk_Komarov WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEB41DB27A80EE600077CD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3FEB41DD27A80EE700077CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FEB41E327A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CookBook_Krasyuk_Komarov WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FEB41E827A80EE700077CD3 /* TableRecipesIC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableRecipesIC.swift; sourceTree = "<group>"; };
+		3FEB41EA27A80EE700077CD3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3FEB41EC27A80EE700077CD3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3FEB41EE27A80EE800077CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FEB41F027A80EE800077CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FEB41E027A80EE700077CD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FEB41CA27A80EE600077CD3 = {
+			isa = PBXGroup;
+			children = (
+				3FEB41D927A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App */,
+				3FEB41E727A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension */,
+				3FEB41D227A80EE600077CD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FEB41D227A80EE600077CD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB41D127A80EE600077CD3 /* CookBook_Krasyuk_Komarov.app */,
+				3FEB41D527A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app */,
+				3FEB41E327A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FEB41D927A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3FEB41DA27A80EE600077CD3 /* Interface.storyboard */,
+				3FEB41DD27A80EE700077CD3 /* Assets.xcassets */,
+			);
+			path = "CookBook_Krasyuk_Komarov WatchKit App";
+			sourceTree = "<group>";
+		};
+		3FEB41E727A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3FDAEF7F27B39D100044165B /* RowTable.swift */,
+				3FDAEF8027B39F2A0044165B /* Recipes.swift */,
+				3FEB41E827A80EE700077CD3 /* TableRecipesIC.swift */,
+				3FDA400527BA7C0B00A2570A /* DetailRecipeIC.swift */,
+				3FDA400727BA832000A2570A /* RecipeDescriptionIC.swift */,
+				3FEB41EA27A80EE700077CD3 /* ExtensionDelegate.swift */,
+				3FEB41EC27A80EE700077CD3 /* ComplicationController.swift */,
+				3FEB41EE27A80EE800077CD3 /* Assets.xcassets */,
+				3FEB41F027A80EE800077CD3 /* Info.plist */,
+			);
+			path = "CookBook_Krasyuk_Komarov WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FEB41D027A80EE600077CD3 /* CookBook_Krasyuk_Komarov */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEB41FB27A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov" */;
+			buildPhases = (
+				3FEB41CF27A80EE600077CD3 /* Resources */,
+				3FEB41FA27A80EE800077CD3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEB41D827A80EE600077CD3 /* PBXTargetDependency */,
+			);
+			name = CookBook_Krasyuk_Komarov;
+			productName = CookBook_Krasyuk_Komarov;
+			productReference = 3FEB41D127A80EE600077CD3 /* CookBook_Krasyuk_Komarov.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		3FEB41D427A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEB41F727A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov WatchKit App" */;
+			buildPhases = (
+				3FEB41D327A80EE600077CD3 /* Resources */,
+				3FEB41F627A80EE800077CD3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FEB41E627A80EE700077CD3 /* PBXTargetDependency */,
+			);
+			name = "CookBook_Krasyuk_Komarov WatchKit App";
+			productName = "CookBook_Krasyuk_Komarov WatchKit App";
+			productReference = 3FEB41D527A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3FEB41E227A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FEB41F327A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov WatchKit Extension" */;
+			buildPhases = (
+				3FEB41DF27A80EE700077CD3 /* Sources */,
+				3FEB41E027A80EE700077CD3 /* Frameworks */,
+				3FEB41E127A80EE700077CD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CookBook_Krasyuk_Komarov WatchKit Extension";
+			productName = "CookBook_Krasyuk_Komarov WatchKit Extension";
+			productReference = 3FEB41E327A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FEB41CB27A80EE600077CD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3FEB41D027A80EE600077CD3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3FEB41D427A80EE600077CD3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3FEB41E227A80EE700077CD3 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 3FEB41CE27A80EE600077CD3 /* Build configuration list for PBXProject "CookBook_Krasyuk_Komarov" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FEB41CA27A80EE600077CD3;
+			productRefGroup = 3FEB41D227A80EE600077CD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FEB41D027A80EE600077CD3 /* CookBook_Krasyuk_Komarov */,
+				3FEB41D427A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App */,
+				3FEB41E227A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FEB41CF27A80EE600077CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEB41D327A80EE600077CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEB41DE27A80EE700077CD3 /* Assets.xcassets in Resources */,
+				3FEB41DC27A80EE600077CD3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FEB41E127A80EE700077CD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEB41EF27A80EE800077CD3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FEB41DF27A80EE700077CD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FDA400627BA7C0B00A2570A /* DetailRecipeIC.swift in Sources */,
+				3FEB41EB27A80EE700077CD3 /* ExtensionDelegate.swift in Sources */,
+				3FDA400827BA832000A2570A /* RecipeDescriptionIC.swift in Sources */,
+				3FEB41E927A80EE700077CD3 /* TableRecipesIC.swift in Sources */,
+				3FEB41ED27A80EE700077CD3 /* ComplicationController.swift in Sources */,
+				3FDAEF8127B39F2A0044165B /* Recipes.swift in Sources */,
+				3FDAEF8227B3A28B0044165B /* RowTable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FEB41D827A80EE600077CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEB41D427A80EE600077CD3 /* CookBook_Krasyuk_Komarov WatchKit App */;
+			targetProxy = 3FEB41D727A80EE600077CD3 /* PBXContainerItemProxy */;
+		};
+		3FEB41E627A80EE700077CD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FEB41E227A80EE700077CD3 /* CookBook_Krasyuk_Komarov WatchKit Extension */;
+			targetProxy = 3FEB41E527A80EE700077CD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FEB41DA27A80EE600077CD3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FEB41DB27A80EE600077CD3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FEB41F127A80EE800077CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FEB41F227A80EE800077CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FEB41F427A80EE800077CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CookBook_Krasyuk_Komarov WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Krasyuk_Komarov WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3FEB41F527A80EE800077CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CookBook_Krasyuk_Komarov WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Krasyuk_Komarov WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3FEB41F827A80EE800077CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CookBook_Krasyuk_Komarov_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Krasyuk_Komarov WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3FEB41F927A80EE800077CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = CookBook_Krasyuk_Komarov_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "CookBook_Krasyuk_Komarov WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3FEB41FC27A80EE800077CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3FEB41FD27A80EE800077CD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.Krasyuk-Komarov.CookBook-Krasyuk-Komarov";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FEB41CE27A80EE600077CD3 /* Build configuration list for PBXProject "CookBook_Krasyuk_Komarov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEB41F127A80EE800077CD3 /* Debug */,
+				3FEB41F227A80EE800077CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEB41F327A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEB41F427A80EE800077CD3 /* Debug */,
+				3FEB41F527A80EE800077CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEB41F727A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEB41F827A80EE800077CD3 /* Debug */,
+				3FEB41F927A80EE800077CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FEB41FB27A80EE800077CD3 /* Build configuration list for PBXNativeTarget "CookBook_Krasyuk_Komarov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FEB41FC27A80EE800077CD3 /* Debug */,
+				3FEB41FD27A80EE800077CD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FEB41CB27A80EE600077CD3 /* Project object */;
+}
